@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("id.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+
+.age-options {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0 20px;
+}
+
+.age-options label {
+  font-weight: normal;
+}
+
+
+button {
+  padding: 12px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #009acc;
+}
+
+
+.retour {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.retour a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.retour a:hover {
+  text-decoration: underline;
+}

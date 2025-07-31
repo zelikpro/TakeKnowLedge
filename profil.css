@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("page-adultes.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00bfff;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.profile-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #00bfff;
+}
+
+.profile-card h2 {
+  margin: 10px 0 5px;
+}
+
+.profile-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.edit-btn, .logout-btn {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn {
+  background-color: #ff5050;
+}
+
+.edit-btn:hover {
+  background-color: #009acc;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #00ffcc;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.change-password {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.change-password h4 {
+  margin-bottom: 15px;
+}
+
+.change-password input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.change-password button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+}
+
+.change-password button:hover {
+  background-color: #009acc;
+}
+
+.badges {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.badges h4 {
+  margin-bottom: 15px;
+}
+
+.badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badge-grid img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: w

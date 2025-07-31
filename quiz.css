@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("page-adultes.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00bfff;
+}
+
+/* En-tête */
+.quiz-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.quiz-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.quiz-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Section Quiz */
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.quiz-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  text-align: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.quiz-card h2 {
+  font-size: 1.4rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.quiz-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.quiz-card button {
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-card button:hover {
+  background-color: #009acc;
+}

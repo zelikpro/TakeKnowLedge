@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("page-adultes.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00bfff;
+}
+
+.section-title {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.section-title h1,
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.formation-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s ease;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.premium {
+  border: 2px solid gold;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}

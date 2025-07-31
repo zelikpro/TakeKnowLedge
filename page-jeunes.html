@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="stylej.css" type="text/css">
+  <title>Ma première page HTLM</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+
+<nav class="navbar">
+  <a href="index.html">🏠 Accueil</a>
+  <a href="quiz.html">🧠 Quiz</a>
+  <a href="chat.html">💬 Chat Pro</a>
+  <a href="formations.html">📚 Formations</a>
+  <a href="page-suivi.html">📈 Suivi</a>
+  <a href="profil.html">👤 Profil</a>
+</nav>
+
+<input type="text" placeholder="Rechercher une formation...🔎" class="search-bar">
+    
+<h1>Page Jeunes</h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="formation-carousel">
+  <div class="formation-card">
+    <img src="formationmarketing.jpg" alt="Formation 1">
+    <p>Formation Marketing</p>
+  </div>
+  <div class="formation-card">
+    <img src="developpementweb.jpg" alt="Formation 2">
+    <p>Développement Web</p>
+  </div>
+  <div class="formation-card">
+    <img src="communicationdigitale.jpg" alt="Formation 3">
+    <p>Communication Digitale</p>
+  </div>
+
+   <div class="formation-card">
+    <img src="developpementfrontend.jpg" alt="Formation 3">
+    <p>Développement Frontend</p>
+  </div>
+
+   <div class="formation-card">
+    <img src="creationdapplicationsmobiles.jpg" alt="Formation 3">
+    <p>Création d'applications mobiles</p>
+  </div>
+
+   <div class="formation-card">
+    <img src="cybersecurite.jpg" alt="Formation 3">
+    <p>Cybersécurité</p>
+  </div>
+
+   <div class="formation-card">
+    <img src="prisedeparoleenpublic.jpg" alt="Formation 3">
+    <p>Prise de parole en public</p>
+  </div>
+ 
+  <script>
+    const carousel = document.getElementById('carousel');
+    const scrollStep = 220;
+    const delay = 2500;
+
+    function autoScrollCarousel() {
+      if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1) {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        carousel.scrollBy({ left: scrollStep, behavior: 'smooth' });
+      }
+    }
+
+    setInterval(autoScrollCarousel, delay);
+  </script>
+
+
+</script>
+</body>
+</html>

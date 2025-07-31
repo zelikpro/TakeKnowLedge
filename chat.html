@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="chat.css" type="text/css">
+  <title>Ma première page HTLM</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="index.html">🏠 Accueil</a>
+    <a href="quiz.html">🧠 Quiz</a>
+    <a href="chat.html">💬 Chat Pro</a>
+    <a href="formations.html">📚 Formations</a>
+    <a href="page-suivi.html">📈 Suivi</a>
+    <a href="profil.html">👤 Profil</a>
+  </nav>
+
+  <div class="chat-container">
+    <h1>💬 Discuter avec un professionnel</h1>
+
+    <div class="pro-list">
+      <div class="pro-card">
+        <h3>👩‍💼 Julie - Experte en marketing</h3>
+        <button onclick="startChat('Julie')">Discuter</button>
+      </div>
+      <div class="pro-card">
+        <h3>👨‍💻 Thomas - Développeur web</h3>
+        <button onclick="startChat('Thomas')">Discuter</button>
+      </div>
+      <div class="pro-card">
+        <h3>🧑‍🏫 Claire - Formatrice bureautique</h3>
+        <button onclick="startChat('Claire')">Discuter</button>
+      </div>
+    </div>
+
+    <div id="chatbox" class="chat-box hidden">
+      <h2>Conversation avec <span id="proName"></span></h2>
+      <div class="messages">
+        <p class="pro">Bonjour, comment puis-je vous aider ?</p>
+      </div>
+      <input type="text" placeholder="Votre message..." id="userInput">
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+
+
+ 
+
+</body>
+</html>
